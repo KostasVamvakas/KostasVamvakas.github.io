@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konstantinos Vamvakas — Resume</title>
+  <meta name="description" content="Resume of Konstantinos Vamvakas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="page-hero" style="--hero-img: url('assets/images/top.jpg');">
+    <div class="page-hero-overlay"></div>
+
+    <div class="hero-nav">
+      <div class="nav-wide">
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas</a>
+
+        <nav class="nav-links navlinks-on-hero nav-right">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a class="active" href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <span class="nav-sep">|</span>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container page-hero-content">
+      <h1 class="page-title">Resume</h1>
+      <p class="page-subtitle">A quick overview. Download the full PDF if you prefer.</p>
+
+      <div class="page-actions">
+        <a class="page-btn" href="assets/Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-white">
+    <div class="container">
+
+      <section class="white-section resume-block">
+        <h2 class="resume-h2">Education</h2>
+        <div class="resume-item">
+          <div class="resume-head">
+            <div><strong>Electrical & Computer Engineering</strong> — NTUA</div>
+            <div class="resume-date">20XX – Present</div>
+          </div>
+          <ul class="resume-list">
+            <li>Key topics: …</li>
+            <li>Relevant courses: …</li>
+          </ul>
+        </div>
+
+        <h2 class="resume-h2">Research / Teams</h2>
+        <div class="resume-item">
+          <div class="resume-head">
+            <div><strong>Okeanos Student Research Team</strong> — Member</div>
+            <div class="resume-date">20XX – Present</div>
+          </div>
+          <ul class="resume-list">
+            <li>What you do: … (1 bullet)</li>
+            <li>Impact/result: … (1 bullet)</li>
+          </ul>
+        </div>
+
+        <h2 class="resume-h2">Skills</h2>
+        <p class="resume-text">
+          <strong>Programming:</strong> …<br>
+          <strong>Tools:</strong> …<br>
+          <strong>Domains:</strong> Embedded, Signals, Control, Power, ML, etc.
+        </p>
+      </section>
+
+      <footer class="white-footer">
+        <div class="footer-inner">
+          <div class="footer-left">© <span id="y"></span> Konstantinos Vamvakas</div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

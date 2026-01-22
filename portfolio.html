@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konstantinos Vamvakas — Portfolio</title>
+  <meta name="description" content="Projects and portfolio of Konstantinos Vamvakas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top banner (short) -->
+  <header class="page-hero" style="--hero-img: url('assets/images/top.jpg');">
+    <div class="page-hero-overlay"></div>
+
+    <div class="hero-nav">
+      <div class="nav-wide">
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas</a>
+
+        <nav class="nav-links navlinks-on-hero nav-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <span class="nav-sep">|</span>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container page-hero-content">
+      <h1 class="page-title">Portfolio</h1>
+      <p class="page-subtitle">Selected projects and work. Clear context, your contribution, and what changed because of it.</p>
+    </div>
+  </header>
+
+  <main class="site-white">
+    <div class="container">
+
+      <!-- Project list -->
+      <section class="white-section">
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-thumb">
+              <!-- If you have an image, replace the div with an <img> like on home -->
+              <!-- <img src="assets/images/project1.jpg" alt="Project 1 screenshot" class="project-thumb-img"> -->
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project Title #1</h3>
+              <p class="project-meta">Tech: … · Role: … · Year: …</p>
+              <p class="project-desc">
+                2–4 lines: what problem, what you built, and the outcome (numbers if possible).
+              </p>
+              <div class="project-actions">
+                <a class="link-btn" href="https://github.com/yourname/project1" target="_blank" rel="noopener">GitHub</a>
+                <a class="link-btn" href="#" target="_blank" rel="noopener">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb"></div>
+            <div class="project-body">
+              <h3 class="project-title">Project Title #2</h3>
+              <p class="project-meta">Tech: … · Role: … · Year: …</p>
+              <p class="project-desc">
+                2–4 lines describing it. Keep it scannable.
+              </p>
+              <div class="project-actions">
+                <a class="link-btn" href="https://github.com/yourname/project2" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <footer class="white-footer">
+        <div class="footer-inner">
+          <div class="footer-left">© <span id="y"></span> Konstantinos Vamvakas</div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

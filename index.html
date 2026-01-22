@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konstantinos Vamvakas — Hardware–Software Systems Engineer </title>
+  <meta name="description" content="Portfolio and resume of Konstantinos Vamvakas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- FULL SCREEN HERO (100% viewport) -->
+  <header class="hero-full" style="--hero-img: url('assets/images/top.png');">
+    <div class="hero-overlay"></div>
+
+    <!-- Nav sits on top of the hero -->
+    <div class="hero-nav">
+  <div class="nav-wide">
+    <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas</a>
+
+    <nav class="nav-links navlinks-on-hero nav-right">
+      <a class="active" href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <span class="nav-sep">|</span>
+      <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</div>
+
+
+    <!-- Centered intro -->
+    <div class="hero-center">
+      <div class="hero-center-inner">
+        <h1 class="hero-title">HI, I'M 
+           KONSTANTINOS VAMVAKAS</h1>
+        <p class="hero-sub">
+          I'm an Electrical and Computer Engineer with a Passion for Low Level Software and Hardware Design
+        </p>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- WHITE SITE CONTENT -->
+  <main class="site-white" id="about">
+  <div class="container">
+
+    <section class="white-section">
+
+  <!-- Short intro paragraph (Katie-style) -->
+  <div class="white-intro reveal white-intro-hero" data-delay="1">
+  <p>
+    I am an undergraduate Electrical and Computer Engineering student at the
+   National Technical University of Athens, and a member of the
+    Okeanos Student Research Team, where I work on engineering challenges
+    related to ocean and environmental applications. My interests lie at the intersection
+    of hardware, software, and applied research, and I am actively developing my skills
+    through research projects and hands-on engineering work.
+  </p>
+</div>
+
+
+ 
+
+  <!-- Photo + longer paragraph -->
+  <div class="about-white-grid">
+
+  <!-- LEFT: Photo -->
+  <div class="about-white-photo reveal" data-delay="3">
+    <img
+      src="assets/images/profile.jpeg"
+      alt="Photo of Konstantinos Vamvakas"
+      class="profile-white-img"
+    >
+  </div>
+
+  <!-- RIGHT: Title + Paragraph -->
+  <div class="about-white-text reveal" data-delay="4">
+
+    <h3 class="about-side-title">About</h3>
+
+    <p>
+      (Your paragraph goes here.) Write about your background at NTUA Electrical and
+      Computer Engineering, your work with the Okeanos Student Research Team, what
+      you are currently learning, and the kinds of engineering problems that
+      interest you.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+    </section>
+
+    <footer class="white-footer reveal" data-delay="4">
+      <div class="footer-inner">
+        <div class="footer-left">
+          © <span id="y"></span> Konstantinos Vamvakas
+        </div>
+
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+</main>
+
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+  // Scroll reveal using IntersectionObserver
+  const revealEls = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target); // reveal once
+      }
+    }
+  }, { threshold: 0.12 });
+
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konstantinos Vamvakas — Contact</title>
+  <meta name="description" content="Contact Konstantinos Vamvakas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="page-hero" style="--hero-img: url('assets/images/top.jpg');">
+    <div class="page-hero-overlay"></div>
+
+    <div class="hero-nav">
+      <div class="nav-wide">
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas</a>
+
+        <nav class="nav-links navlinks-on-hero nav-right">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a class="active" href="contact.html">Contact</a>
+          <span class="nav-sep">|</span>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container page-hero-content">
+      <h1 class="page-title">Contact</h1>
+      <p class="page-subtitle">Send me a message and I’ll get back to you.</p>
+    </div>
+  </header>
+
+  <main class="site-white">
+    <div class="container">
+
+      <section class="white-section contact-form-wrap">
+        <div class="contact-form-card">
+
+          <!-- IMPORTANT:
+               Replace the action URL after you create a Formspree form (see instructions below). -->
+          <form class="contact-form" action="https://formspree.io/f/mnjpqyzd" method="POST">
+            <div class="contact-grid">
+              <div>
+                <label for="firstName">First name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required />
+              </div>
+
+              <div>
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <!-- Optional: helps you filter spam -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <button class="contact-submit" type="submit">Send</button>
+
+            <p class="contact-small">
+              Prefer email? <a href="mailto:you@example.com">you@example.com</a>
+            </p>
+          </form>
+
+        </div>
+      </section>
+
+      <footer class="white-footer">
+        <div class="footer-inner">
+          <div class="footer-left">© <span id="y"></span> Konstantinos Vamvakas</div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
