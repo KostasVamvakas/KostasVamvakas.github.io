@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konstantinos Vamvakas — PDB (Control)</title>
+  <meta name="description" content="Power distribution board for control electronics designed by Konstantinos Vamvakas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="white-top">
+    <div class="hero-nav">
+      <div class="nav-wide">
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas - ECE</a>
+
+        <nav class="nav-links navlinks-on-hero nav-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <span class="nav-sep">|</span>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </div>
+
+
+
+    <div class="container white-top-content">
+      <h1 class="white-top-title">PDB — Control</h1>
+      <p class="white-top-subtitle">Power distribution and structured connectivity for control electronics.</p>
+
+      <div class="page-actions">
+        <a class="page-btn page-btn-black" href="pcbs.html">← Back to PCB list</a>
+      </div>
+    </div>
+
+    <div class="white-content-divider"></div>
+  </header>
+
+  <main class="site-white">
+    <div class="container">
+
+      <section class="pcb-wide-photo pcb-wide-photo-big">
+        <img
+          src="assets/images/pcbs/pdb-control-1.png"
+          alt="PDB Control PCB"
+          class="pcb-wide-img pcb-wide-img-big"
+        >
+      </section>
+
+      <section class="white-section">
+        <div class="pcb-header">
+          <p class="pcb-detail-sub">
+            Provides organized power distribution and connector structure for the control stack, improving maintainability and integration.
+          </p>
+        </div>
+
+        <div class="pcb-specs">
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Role</div>
+            <div class="pcb-spec-value">Schematic capture + PCB layout</div>
+          </div>
+
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Tools</div>
+            <div class="pcb-spec-value">KiCad · DFM-minded layout</div>
+          </div>
+
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Context</div>
+            <div class="pcb-spec-value">Active control of the foils required a compact controller capable of real-time control, sensor interfacing, and reliable actuation. A dedicated board was needed to tightly integrate the microcontroller with the required I/O.</div>
+          </div>
+
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Outcome</div>
+            <div class="pcb-spec-value">The board enabled precise and responsive foil control, with stable operation during testing. The integration simplified wiring and improved maintainability.</div>
+          </div>
+        </div>
+
+        <div class="pcb-highlights">
+          <h3 class="pcb-section-title">Design highlights</h3>
+          <ul class="pcb-bullets">
+            <li>Teensy-based control architecture.</li>
+            <li>Interfaces for sensors and actuators.</li>
+            <li>Designed for deterministic, real-time control applications.</li>
+          </ul>
+        </div>
+
+        
+      </section>
+
+      <footer class="white-footer">
+        <div class="footer-inner">
+          <div class="footer-left">© <span id="y"></span> Konstantinos Vamvakas</div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

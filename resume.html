@@ -7,14 +7,15 @@
   <meta name="description" content="Resume of Konstantinos Vamvakas." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <header class="page-hero" style="--hero-img: url('assets/images/top.jpg');">
-    <div class="page-hero-overlay"></div>
+  <!-- WHITE HEADER (same as Portfolio + PCBs) -->
+  <header class="white-top">
 
     <div class="hero-nav">
       <div class="nav-wide">
-        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas</a>
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas - ECE</a>
 
         <nav class="nav-links navlinks-on-hero nav-right">
           <a href="index.html">Home</a>
@@ -28,51 +29,97 @@
       </div>
     </div>
 
-    <div class="container page-hero-content">
-      <h1 class="page-title">Resume</h1>
-      <p class="page-subtitle">A quick overview. Download the full PDF if you prefer.</p>
+    
+
+    <div class="container white-top-content">
+      <h1 class="white-top-title">Resume</h1>
+      <p class="white-top-subtitle">A quick overview. Download the full PDF if you prefer.</p>
 
       <div class="page-actions">
-        <a class="page-btn" href="assets/Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+  <a class="page-btn page-btn-black"
+     href="assets/Konstantinos%20Vamvakas%20Resume.pdf"
+     target="_blank"
+     rel="noopener">
+    Download PDF
+  </a>
+</div>
+
       </div>
     </div>
+<div class="white-content-divider"></div>
   </header>
 
   <main class="site-white">
     <div class="container">
 
       <section class="white-section resume-block">
-        <h2 class="resume-h2">Education</h2>
-        <div class="resume-item">
-          <div class="resume-head">
-            <div><strong>Electrical & Computer Engineering</strong> — NTUA</div>
-            <div class="resume-date">20XX – Present</div>
-          </div>
-          <ul class="resume-list">
-            <li>Key topics: …</li>
-            <li>Relevant courses: …</li>
-          </ul>
-        </div>
 
-        <h2 class="resume-h2">Research / Teams</h2>
-        <div class="resume-item">
-          <div class="resume-head">
-            <div><strong>Okeanos Student Research Team</strong> — Member</div>
-            <div class="resume-date">20XX – Present</div>
-          </div>
-          <ul class="resume-list">
-            <li>What you do: … (1 bullet)</li>
-            <li>Impact/result: … (1 bullet)</li>
-          </ul>
-        </div>
+  <!-- EDUCATION -->
+  <h2 class="resume-h2">Education</h2>
 
-        <h2 class="resume-h2">Skills</h2>
-        <p class="resume-text">
-          <strong>Programming:</strong> …<br>
-          <strong>Tools:</strong> …<br>
-          <strong>Domains:</strong> Embedded, Signals, Control, Power, ML, etc.
-        </p>
-      </section>
+  <div class="resume-item">
+    <div class="resume-head">
+      <div>
+        <strong>National Technical University of Athens (NTUA)</strong><br>
+        BSc with Integrated MSc in Electrical & Computer Engineering
+      </div>
+      <div class="resume-date">2023 – 2028 (expected)</div>
+    </div>
+
+    <ul class="resume-list">
+      <li><strong>GPA:</strong> 9.1 / 10 (Excellent)</li>
+      <li>Core focus on electronics, embedded systems, control, and low level programming.</li>
+    </ul>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <h2 class="resume-h2">Research & Engineering Experience</h2>
+
+  <div class="resume-item">
+    <div class="resume-head">
+      <div>
+        <strong>Student Research Engineer</strong> — Electric Racing Boat Team OCEANOS<br>
+        School of Naval Architecture & Marine Engineering, NTUA
+      </div>
+      <div class="resume-date">2024 – Present</div>
+    </div>
+
+    <ul class="resume-list">
+      <li>
+        Designed and delivered multiple custom PCBs for onboard power, telemetry, control,
+        motor pre-charge, and sensor interface systems.
+      </li>
+      <li>
+        Achieved first-pass successful deployment through careful component selection and
+        robust PCB design, resulting in zero post-fabrication failures and no hardware revisions.
+      </li>
+      <li>
+        Performed schematic capture and PCB layout in KiCad; used MATLAB for system modeling
+        and performance analysis.
+      </li>
+      <li>
+        Implemented and tested C++ code on onboard microcontrollers, supporting automatic
+        control functionality and system-level vessel operation.
+      </li>
+      <li>
+        Collaborated closely with naval architects and mechanical engineers to ensure reliable
+        electronics integration under racing conditions.
+      </li>
+    </ul>
+  </div>
+
+  <!-- SKILLS -->
+  <h2 class="resume-h2">Technical Skills</h2>
+
+  <p class="resume-text">
+    <strong>Programming:</strong> C++, MATLAB<br>
+    <strong>Electronics & Embedded Systems:</strong> PCB design (KiCad), microcontrollers, power and signal electronics<br>
+    <strong>Analysis & Control:</strong> system modeling, simulation, automatic control fundamentals<br>
+    <strong>Laboratory:</strong> manual soldering, circuit debugging and testing
+  </p>
+
+</section>
+
 
       <footer class="white-footer">
         <div class="footer-inner">
@@ -96,4 +143,3 @@
   </script>
 </body>
 </html>
-

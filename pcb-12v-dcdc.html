@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konstantinos Vamvakas — 12V DC–DC Converter</title>
+  <meta name="description" content="12V DC–DC converter PCB designed by Konstantinos Vamvakas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- WHITE HEADER (same as Portfolio/Resume/Contact/PCBs) -->
+  <header class="white-top">
+
+    <div class="hero-nav">
+      <div class="nav-wide">
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas - ECE</a>
+
+        <nav class="nav-links navlinks-on-hero nav-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <span class="nav-sep">|</span>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </div>
+
+    
+
+    <div class="container white-top-content">
+      <h1 class="white-top-title">12V DC–DC Converter</h1>
+      <p class="white-top-subtitle">Designed in KiCad for Oceanos — power conversion for onboard subsystems.</p>
+
+      <div class="page-actions">
+        <a class="page-btn page-btn-black" href="pcbs.html">← Back to PCB list</a>
+      </div>
+    </div>
+
+    <!-- faint divider between title block and page content -->
+    <div class="white-content-divider"></div>
+  </header>
+
+  <main class="site-white">
+    <div class="container">
+
+      <!-- Almost full-width photo (bigger) -->
+      <section class="pcb-wide-photo pcb-wide-photo-big">
+        <img
+          src="assets/images/pcbs/12v-dcdc-1.png"
+          alt="12V DC–DC converter PCB"
+          class="pcb-wide-img pcb-wide-img-big"
+        >
+      </section>
+
+      <!-- Technical details -->
+      <section class="white-section">
+        <div class="pcb-header">
+          <p class="pcb-detail-sub">
+            Converts the onboard supply to a stable 12V rail for vehicle subsystems.
+          </p>
+        </div>
+
+        <div class="pcb-specs">
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Role</div>
+            <div class="pcb-spec-value">Component selection + Schematic capture + PCB layout</div>
+          </div>
+
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Tools</div>
+            <div class="pcb-spec-value">KiCad · DFM-minded layout</div>
+          </div>
+
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Context</div>
+            <div class="pcb-spec-value">Several subsystems required a stable 12 V supply derived from the main power bus to drive sensors, controllers, and auxiliary electronics. A dedicated converter was needed to ensure clean power delivery while tolerating electrical noise and load transients.</div>
+          </div>
+
+          <div class="pcb-spec">
+            <div class="pcb-spec-label">Outcome</div>
+            <div class="pcb-spec-value">The 12 V converter provided stable and reliable power across operating conditions, with no observed power-related issues during integration and testing. Its clean output improved the robustness of downstream electronics and simplified system-level power distribution.</div>
+          </div>
+        </div>
+
+        <div class="pcb-highlights">
+          <h3 class="pcb-section-title">Design highlights</h3>
+          <ul class="pcb-bullets">
+            <li>Dedicated 12 V DC-DC conversion stage.</li>
+            <li>Layout optimized for low ripple and transient response.</li>
+            <li>Designed for reliable operation in a mixed-signal, power-dense environment.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="white-footer">
+        <div class="footer-inner">
+          <div class="footer-left">© <span id="y"></span> Konstantinos Vamvakas</div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

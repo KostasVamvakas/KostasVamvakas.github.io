@@ -888,3 +888,882 @@ textarea{min-height:140px; resize:vertical}
 @media (max-width: 700px){
   .contact-grid{ grid-template-columns: 1fr; }
 }
+
+/* Make whole project card clickable without looking like a link */
+.project-card-link{
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card-link:hover{
+  transform: translateY(-2px);
+  transition: transform 180ms ease;
+}
+
+/* ===== PCB grid cards ===== */
+.pcb-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.pcb-card{
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pcb-thumb-link{
+  display: block;
+}
+
+.pcb-thumb{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(17,24,39,.08);
+}
+
+.pcb-body{
+  padding: 16px;
+}
+
+.pcb-title{
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 650;
+  color: #111827;
+}
+
+.pcb-desc{
+  margin: 0 0 12px;
+  color: rgba(17,24,39,.82);
+  line-height: 1.65;
+}
+
+.pcb-open{
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(17,24,39,.12);
+  text-decoration: none;
+  color: rgba(17,24,39,.86);
+}
+
+.pcb-open:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 900px){
+  .pcb-grid{ grid-template-columns: 1fr; }
+  .pcb-thumb{ height: 200px; }
+}
+
+/* ===== 3D PCB viewer ===== */
+.model-viewer-wrap{
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f9fafb;
+}
+
+/* ===== PCB detail page (photos instead of 3D) ===== */
+.pcb-detail-title{
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.pcb-detail-sub{
+  margin: 0 0 14px;
+  color: rgba(17,24,39,.78);
+  max-width: 70ch;
+}
+
+.pcb-detail-top{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.pcb-detail-list{
+  margin: 0 0 14px;
+  padding-left: 18px;
+  color: rgba(17,24,39,.84);
+  line-height: 1.7;
+}
+
+.pcb-detail-image{
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pcb-detail-img{
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.pcb-detail-gallery{
+  margin-top: 16px;
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pcb-gallery-img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px){
+  .pcb-detail-top{ grid-template-columns: 1fr; }
+  .pcb-detail-img{ height: 300px; }
+  .pcb-gallery-img{ height: 300px; }
+}
+
+/* ===== Single-photo PCB page layout ===== */
+.pcb-hero-photo{
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pcb-hero-img{
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  display: block;
+}
+
+.pcb-details{
+  margin-top: 18px;
+  max-width: 80ch;
+}
+
+.pcb-detail-title{
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.pcb-detail-sub{
+  margin: 0 0 14px;
+  color: rgba(17,24,39,.78);
+}
+
+.pcb-detail-list{
+  margin: 0 0 14px;
+  padding-left: 18px;
+  color: rgba(17,24,39,.84);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px){
+  .pcb-hero-img{ height: 300px; }
+}
+
+/* ===== PCB detail: stacked technical layout ===== */
+.pcb-hero-photo{
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pcb-hero-img{
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.pcb-header{
+  margin-top: 18px;
+  max-width: 90ch;
+}
+
+.pcb-detail-title{
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 720;
+  color: #111827;
+}
+
+.pcb-detail-sub{
+  margin: 0;
+  color: rgba(17,24,39,.78);
+  line-height: 1.65;
+}
+
+/* Specs grid */
+.pcb-specs{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pcb-spec{
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 16px;
+  background: #fff;
+  padding: 14px;
+}
+
+.pcb-spec-label{
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(17,24,39,.55);
+  margin-bottom: 6px;
+}
+
+.pcb-spec-value{
+  color: rgba(17,24,39,.86);
+  line-height: 1.55;
+}
+
+/* Highlights */
+.pcb-highlights{
+  margin-top: 18px;
+  max-width: 90ch;
+}
+
+.pcb-section-title{
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.pcb-bullets{
+  margin: 0 0 14px;
+  padding-left: 18px;
+  color: rgba(17,24,39,.84);
+  line-height: 1.75;
+}
+
+@media (max-width: 900px){
+  .pcb-hero-img{ height: 320px; }
+  .pcb-specs{ grid-template-columns: 1fr; }
+}
+
+/* ===== White topbar (for PCB pages / clean pages) ===== */
+.topbar{
+  background: #fff;
+  border-bottom: 1px solid rgba(17,24,39,.10);
+}
+
+.topbar .nav-wide{
+  padding: 14px 20px;
+}
+
+/* Title row above the photo */
+.pcb-page-top{
+  padding-top: 18px;
+  padding-bottom: 10px;
+}
+
+.pcb-page-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pcb-page-title{
+  margin: 0;
+  font-size: 28px;
+  font-weight: 720;
+  color: #111827;
+}
+
+.pcb-back-link{
+  color: rgba(17,24,39,.75);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(17,24,39,.35);
+  padding-bottom: 2px;
+}
+
+.pcb-back-link:hover{
+  opacity: .85;
+}
+
+/* Almost full-width photo (side-to-side) */
+.pcb-wide-photo{
+  margin: 0 auto;
+  padding: 0 20px;     /* controls side margins */
+}
+
+.pcb-wide-img{
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+  border: 1px solid rgba(17,24,39,.10);
+  background: #fff;
+}
+
+/* reuse your existing specs/highlights styles if you already added them */
+@media (max-width: 900px){
+  .pcb-page-head{ flex-direction: column; align-items: flex-start; }
+  .pcb-wide-img{ height: 320px; }
+}
+/* ===== Compact black header for PCB pages ===== */
+.page-hero-compact{
+  min-height: auto;
+  background: #000;
+}
+
+.page-hero-content-compact{
+  padding-top: 28px;
+  padding-bottom: 18px;
+}
+
+/* ===== Katie-style: white pages with black nav (non-home pages) ===== */
+.white-header{
+  background: #fff;
+  border-bottom: 1px solid rgba(17,24,39,.10);
+}
+
+.white-header .nav-wide{
+  padding: 14px 20px;
+}
+
+.brand-black{
+  color: #111827 !important;
+  text-decoration: none;
+}
+
+.nav-black a{
+  color: rgba(17,24,39,.86) !important;
+  text-decoration: none;
+}
+
+.nav-black a:hover{
+  opacity: .85;
+}
+
+/* Make the active underline visible on white */
+.nav-black a.active{
+  border-bottom: 2px solid rgba(17,24,39,.90) !important;
+  padding-bottom: 6px;
+}
+
+/* White header content */
+.white-header-content{
+  padding-top: 22px;
+  padding-bottom: 18px;
+}
+
+.white-title{
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 720;
+  color: #111827;
+}
+
+.white-subtitle{
+  margin: 0;
+  max-width: 80ch;
+  color: rgba(17,24,39,.78);
+  line-height: 1.65;
+}
+
+.white-actions{
+  margin-top: 12px;
+}
+
+/* Optional: black-outline button on white */
+.page-btn-black{
+  border: 1px solid rgba(17,24,39,.18) !important;
+  color: rgba(17,24,39,.90) !important;
+  background: transparent !important;
+}
+
+/* ===== Wide banner image (almost edge-to-edge) ===== */
+.wide-banner{
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 0 20px; /* controls side margins */
+}
+
+.wide-banner-img{
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+  border: 1px solid rgba(17,24,39,.10);
+  background: #fff;
+}
+
+@media (max-width: 900px){
+  .wide-banner-img{ height: 240px; }
+}
+/* ===== PCBs page: banner behind nav (Katie-like) ===== */
+.page-hero-banner{
+  min-height: 56vh;                 /* banner height */
+  background-position: center;
+  background-size: cover;
+}
+
+/* Softer overlay so the image still shows */
+.page-hero-overlay-soft{
+  opacity: .38;                      /* tweak 0.25–0.55 depending on image darkness */
+}
+
+/* The “bar underneath the nav” */
+.nav-wide-bar{
+  border-bottom: 1px solid rgba(255,255,255,.22);
+  padding-bottom: 12px;
+}
+
+/* Make the hero content a bit lower so it doesn’t feel cramped */
+.page-hero-content-banner{
+  padding-top: 36px;
+  padding-bottom: 26px;
+  max-width: 900px;
+}
+
+@media (max-width: 900px){
+  .page-hero-banner{ min-height: 44vh; }
+  .page-hero-content-banner{ padding-top: 26px; }
+}
+/* ===== White page header with black nav (non-home pages) ===== */
+.page-top{
+  background: #fff;
+}
+
+.page-top-white{
+  border-bottom: 1px solid rgba(17,24,39,.10);
+}
+
+.nav-wide-bar-black{
+  border-bottom: 1px solid rgba(17,24,39,.10);
+  padding-bottom: 12px;
+}
+
+.brand-black{
+  color: #111827 !important;
+  text-decoration: none;
+}
+
+.nav-black a{
+  color: rgba(17,24,39,.86) !important;
+  text-decoration: none;
+}
+
+.nav-black a:hover{
+  opacity: .85;
+}
+
+.nav-sep-black{
+  color: rgba(17,24,39,.45) !important;
+}
+
+.nav-black a.active{
+  border-bottom: 2px solid rgba(17,24,39,.90) !important;
+  padding-bottom: 6px;
+}
+
+/* Title area under nav */
+.page-top-content{
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+.page-top-title{
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 740;
+  color: #111827;
+}
+
+.page-top-subtitle{
+  margin: 0;
+  max-width: 80ch;
+  color: rgba(17,24,39,.78);
+  line-height: 1.65;
+}
+
+.page-btn-black{
+  border: 1px solid rgba(17,24,39,.18) !important;
+  color: rgba(17,24,39,.90) !important;
+  background: transparent !important;
+}
+/* ===== White header variant while keeping the SAME nav markup/classes ===== */
+.page-hero-white{
+  background: #fff !important;
+  min-height: auto !important;
+}
+
+/* bar under nav (same feature you asked for) */
+.page-hero-white .nav-bar{
+  border-bottom: 1px solid rgba(17,24,39,.12);
+  padding-bottom: 12px;
+}
+
+/* Inherit same nav classes but force black colors on white header */
+.page-hero-white .brand-on-hero{
+  color: #111827 !important;
+}
+
+.page-hero-white .navlinks-on-hero a{
+  color: rgba(17,24,39,.86) !important;
+}
+
+/* Keep your active underline behavior (force black underline on white) */
+.page-hero-white .navlinks-on-hero a.active{
+  border-bottom-color: rgba(17,24,39,.90) !important;
+}
+
+/* separator color */
+.page-hero-white .nav-sep{
+  color: rgba(17,24,39,.45) !important;
+}
+
+/* Title/subtitle colors in the header */
+.page-hero-content-white{
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+.page-title-black{
+  color: #111827 !important;
+}
+
+.page-subtitle-black{
+  color: rgba(17,24,39,.78) !important;
+}
+
+/* Optional: button styling for white header */
+.page-btn-black{
+  border: 1px solid rgba(17,24,39,.18) !important;
+  color: rgba(17,24,39,.90) !important;
+  background: transparent !important;
+}
+/* ===== White pages with SAME nav markup/classes ===== */
+.white-page-header{
+  background: #fff;
+}
+
+/* Force nav (which normally is white-on-hero) to be black-on-white */
+.white-page-header .brand-on-hero{
+  color: #111827 !important;
+}
+
+.white-page-header .navlinks-on-hero a{
+  color: rgba(17,24,39,.86) !important;
+}
+
+.white-page-header .navlinks-on-hero a.active{
+  border-bottom-color: rgba(17,24,39,.90) !important;
+}
+
+/* Full-width bar under the nav */
+.white-page-header .nav-divider{
+  height: 1px;
+  background: rgba(17,24,39,.12);
+  width: 100%;
+}
+
+/* Title block spacing */
+.white-head-content{
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+.white-head-title{
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 740;
+  color: #111827;
+}
+
+.white-head-subtitle{
+  margin: 0;
+  max-width: 80ch;
+  color: rgba(17,24,39,.78);
+  line-height: 1.65;
+}
+
+/* Optional: button looks good on white */
+.page-btn-black{
+  border: 1px solid rgba(17,24,39,.18) !important;
+  color: rgba(17,24,39,.90) !important;
+  background: transparent !important;
+}
+
+/* ===== PCBs page: white header with your SAME nav markup ===== */
+.white-top{
+  background: #fff;
+}
+
+/* Make your existing hero-nav style look correct on white */
+.white-top .brand-on-hero{
+  color: #111827 !important;
+}
+
+.white-top .navlinks-on-hero a{
+  color: rgba(17,24,39,.86) !important;
+}
+
+/* Active underline should be black */
+.white-top .navlinks-on-hero a.active{
+  border-bottom-color: rgba(17,24,39,.90) !important;
+}
+
+.white-top .nav-sep{
+  color: rgba(17,24,39,.45) !important;
+}
+
+/* Divider bar under nav */
+.white-top-bar{
+  height: 1px;
+  width: 100%;
+  background: rgba(17,24,39,.12);
+}
+
+/* Title block under nav */
+.white-top-content{
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+.white-top-title{
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 740;
+  color: #111827;
+}
+
+.white-top-subtitle{
+  margin: 0;
+  max-width: 80ch;
+  color: rgba(17,24,39,.78);
+  line-height: 1.65;
+}
+
+.page-btn-black{
+  border: 1px solid rgba(17,24,39,.18) !important;
+  color: rgba(17,24,39,.90) !important;
+  background: transparent !important;
+}
+
+/* =========================
+   FIX: White header + SAME nav markup
+   (prevents overlap & makes nav visible)
+   ========================= */
+
+.white-top{
+  background: #fff;
+}
+
+/* Your existing hero nav is likely absolute in hero pages.
+   Force it back into normal flow on white pages. */
+.white-top .hero-nav{
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: 5 !important;
+}
+
+/* Ensure the nav row has height/padding and is visible on white */
+.white-top .nav-wide{
+  padding: 14px 20px !important;
+}
+
+/* Brand + links should be black on white */
+.white-top .brand-on-hero{
+  color: #111827 !important;
+}
+
+.white-top .navlinks-on-hero a{
+  color: rgba(17,24,39,.86) !important;
+}
+
+/* Active underline should be black */
+.white-top .navlinks-on-hero a.active{
+  border-bottom-color: rgba(17,24,39,.90) !important;
+}
+
+.white-top .nav-sep{
+  color: rgba(17,24,39,.45) !important;
+}
+
+/* Divider bar UNDER nav */
+.white-top-bar{
+  height: 1px;
+  width: 100%;
+  background: rgba(17,24,39,.12);
+}
+
+/* Title BELOW nav (and can't overlap anymore) */
+.white-top-content{
+  position: relative !important;
+  padding-top: 18px !important;
+  padding-bottom: 16px !important;
+}
+
+.white-top-title{
+  margin: 0 0 8px !important;
+  font-size: 34px !important;
+  font-weight: 740 !important;
+  color: #111827 !important;
+}
+
+.white-top-subtitle{
+  margin: 0 !important;
+  max-width: 80ch !important;
+  color: rgba(17,24,39,.78) !important;
+  line-height: 1.65 !important;
+}
+
+.page-btn-black{
+  border: 1px solid rgba(17,24,39,.18) !important;
+  color: rgba(17,24,39,.90) !important;
+  background: transparent !important;
+}
+/* ===== White-top nav: match site behavior (active + hover) ===== */
+
+/* Subtle hover like the rest of the site */
+.white-top .navlinks-on-hero a{
+  opacity: .85 !important;
+  transition: opacity .15s ease, border-color .15s ease;
+}
+
+.white-top .navlinks-on-hero a:hover{
+  opacity: 1 !important;
+}
+
+/* Make the active page clearly indicated (Portfolio will be active on PCBs page) */
+.white-top .navlinks-on-hero a.active{
+  opacity: 1 !important;
+  border-bottom: 2px solid rgba(17,24,39,.90) !important;
+  padding-bottom: 6px !important;
+}
+
+/* Ensure non-active links don't show the "bubble" style if any exists */
+.white-top .navlinks-on-hero a{
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+/* Hover underline (like the rest of the site) */
+.white-top .navlinks-on-hero a{
+  position: relative;
+  border-bottom: none !important; /* prevent conflicts */
+  padding-bottom: 8px;
+}
+
+.white-top .navlinks-on-hero a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  height: 2px;
+  background: rgba(17,24,39,.90);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .16s ease, opacity .16s ease;
+  opacity: .35;
+}
+
+.white-top .navlinks-on-hero a:hover::after{
+  transform: scaleX(1);
+  opacity: .55;
+}
+
+.white-top .navlinks-on-hero a.active::after{
+  transform: scaleX(1);
+  opacity: 1;
+}
+/* Fix double underline on active item (white-top pages) */
+.white-top .navlinks-on-hero a.active{
+  border-bottom: none !important;
+}
+
+
+/* Divider between page title and main content */
+.white-content-divider{
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.864); /* slightly lighter than nav divider */
+  margin-bottom: 1px;            /* breathing room before content */
+}
+/* Bigger PCB image on detail pages */
+.pcb-wide-photo-big{
+  padding: 0 12px;      /* smaller side margins than before */
+  margin-top: 18px;
+}
+
+.pcb-wide-img-big{
+  height: 620px;        /* bigger image */
+}
+
+@media (max-width: 900px){
+  .pcb-wide-photo-big{ padding: 0 12px; }
+  .pcb-wide-img-big{ height: 360px; }
+}
+
+/* AM media (video/embed) */
+.am-media{
+  margin-top: 26px;
+}
+
+.am-video{
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  border-radius: 14px;
+  margin-top: 10px;
+}
+
+/* ===== Bigger PCB photo on individual PCB pages ===== */
+
+/* Make the photo section span wider */
+.pcb-wide-photo-big {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+
+/* Make the image itself larger */
+.pcb-wide-img-big {
+  width: 100%;
+  max-width: 1150px;   /* increase from previous value */
+  margin: 0 auto;
+  display: block;
+  border-radius: 18px;
+}
+.white-intro a{
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity .2s ease;
+}
+
+.white-intro a:hover{
+  opacity: .7;
+}

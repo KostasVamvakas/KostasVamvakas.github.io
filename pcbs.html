@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konstantinos Vamvakas — PCB Designs</title>
+  <meta name="description" content="PCB designs by Konstantinos Vamvakas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- WHITE HEADER (but nav markup is identical to the rest of your site) -->
+  <header class="white-top">
+
+    <!-- NAV (same structure/classes you already use everywhere) -->
+    <div class="hero-nav">
+      <div class="nav-wide">
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas - ECE</a>
+
+        <nav class="nav-links navlinks-on-hero nav-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <span class="nav-sep">|</span>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- BAR UNDER NAV -->
+    
+
+    <!-- TITLE UNDER NAV -->
+    <div class="container white-top-content">
+      <h1 class="white-top-title">PCB Designs</h1>
+      <p class="white-top-subtitle">
+        A selection of boards designed in KiCad for Oceanos. Click a board to view details.
+      </p>
+
+      <div class="page-actions">
+        <a class="page-btn page-btn-black" href="portfolio.html">← Back to portfolio</a>
+      </div>
+    </div>
+<div class="white-content-divider"></div>
+  </header>
+
+  <!-- REST OF PAGE (unchanged layout) -->
+  <main class="site-white">
+    <div class="container">
+
+      <section class="white-section">
+        <div class="pcb-grid">
+
+          <!-- 1) 12V DC-DC -->
+          <article class="pcb-card reveal" data-delay="1">
+            <a class="pcb-thumb-link" href="pcb-12v-dcdc.html">
+              <img src="assets/images/pcb-12v-dcdc.png" alt="12V DC-DC converter PCB" class="pcb-thumb">
+            </a>
+            <div class="pcb-body">
+              <h3 class="pcb-title">12V DC–DC Converter</h3>
+              <p class="pcb-desc">
+                Converts the onboard supply to a stable 12V rail for vehicle subsystems. Designed with reliability and layout discipline in mind.
+              </p>
+              <a class="pcb-open" href="pcb-12v-dcdc.html">Open →</a>
+            </div>
+          </article>
+
+          <!-- 2) 24V DC-DC -->
+          <article class="pcb-card reveal" data-delay="2">
+            <a class="pcb-thumb-link" href="pcb-24v-dcdc.html">
+              <img src="assets/images/pcb-24v-dcdc.png" alt="24V DC-DC converter PCB" class="pcb-thumb">
+            </a>
+            <div class="pcb-body">
+              <h3 class="pcb-title">24V DC–DC Converter</h3>
+              <p class="pcb-desc">
+                Dedicated 24V power converter with integrated EMI filtering, designed to ensure clean power delivery and reduced electromagnetic interference.
+              </p>
+              <a class="pcb-open" href="pcb-24v-dcdc.html">Open →</a>
+            </div>
+          </article>
+
+          <!-- 3) PDB — Telemetry -->
+          <article class="pcb-card reveal" data-delay="3">
+            <a class="pcb-thumb-link" href="pcb-pdb-telemetry.html">
+              <img src="assets/images/pcb-pdb-telemetry.png" alt="Power distribution board for telemetry PCB" class="pcb-thumb">
+            </a>
+            <div class="pcb-body">
+              <h3 class="pcb-title">Telemetry</h3>
+              <p class="pcb-desc">
+                Power distribution for telemetry electronics and sensors. Designed to simplify wiring and improve serviceability.
+              </p>
+              <a class="pcb-open" href="pcb-pdb-telemetry.html">Open →</a>
+            </div>
+          </article>
+
+          <!-- 4) PDB — Control -->
+          <article class="pcb-card reveal" data-delay="4">
+            <a class="pcb-thumb-link" href="pcb-pdb-control.html">
+              <img src="assets/images/pcb-pdb-control.png" alt="Power distribution board for control PCB" class="pcb-thumb">
+            </a>
+            <div class="pcb-body">
+              <h3 class="pcb-title">Teensy Foil Control</h3>
+              <p class="pcb-desc">
+                Distribution and protection for control electronics. Structured connectors for clean harnessing and faster debugging.
+              </p>
+              <a class="pcb-open" href="pcb-pdb-control.html">Open →</a>
+            </div>
+          </article>
+
+          <!-- 5) PDB — Motor Precharge -->
+          <article class="pcb-card reveal" data-delay="1">
+            <a class="pcb-thumb-link" href="pcb-pdb-precharge.html">
+              <img src="assets/images/pcb-pdb-precharge.png" alt="Power distribution board for motor precharge PCB" class="pcb-thumb">
+            </a>
+            <div class="pcb-body">
+              <h3 class="pcb-title">Motor Precharge</h3>
+              <p class="pcb-desc">
+                Board supporting the motor precharge path and related protection/control. Layout and connector placement optimized for integration.
+              </p>
+              <a class="pcb-open" href="pcb-pdb-precharge.html">Open →</a>
+            </div>
+          </article>
+
+          <!-- 6) Cable Hub -->
+          <article class="pcb-card reveal" data-delay="2">
+            <a class="pcb-thumb-link" href="pcb-cable-hub.html">
+              <img src="assets/images/pcb-cable-hub.png" alt="Cable hub PCB" class="pcb-thumb">
+            </a>
+            <div class="pcb-body">
+              <h3 class="pcb-title">CANbus Hub</h3>
+              <p class="pcb-desc">
+                CANbus hub designed to simplify wiring and enable reliable communication between sensors and microcontrollers.
+              </p>
+              <a class="pcb-open" href="pcb-cable-hub.html">Open →</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <footer class="white-footer">
+        <div class="footer-inner">
+          <div class="footer-left">© <span id="y"></span> Konstantinos Vamvakas</div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
+
+
