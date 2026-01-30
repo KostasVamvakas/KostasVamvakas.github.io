@@ -1767,3 +1767,10 @@ textarea{min-height:140px; resize:vertical}
 .white-intro a:hover{
   opacity: .7;
 }
+
+/* Justify the paragraphs next to the profile photo (home page white section) */
+.about-white-text p{
+  text-align: justify;
+  hyphens: auto;
+}
+
