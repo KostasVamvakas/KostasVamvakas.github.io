@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oceanos DSP & Sensor Fusion — Konstantinos Vamvakas</title>
+  <meta name="description" content="MATLAB/Simulink DSP and sensor fusion work for the Oceanos student research team." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- WHITE HEADER -->
+  <header class="white-top">
+    <div class="hero-nav">
+      <div class="nav-wide">
+        <a class="brand brand-on-hero brand-big" href="index.html">Konstantinos Vamvakas - ECE</a>
+
+        <nav class="nav-links navlinks-on-hero nav-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <span class="nav-sep">|</span>
+          <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container white-top-content">
+      <p class="project-kicker reveal" data-delay="1">Oceanos Student Research Team</p>
+      <h1 class="white-top-title reveal" data-delay="2">DSP & Sensor Fusion for Autonomous Sensing</h1>
+      <p class="white-top-subtitle reveal" data-delay="3">
+        MATLAB/Simulink modeling and signal processing for GPS, IMU, and sonar data in the control pipeline of an electric racing boat.
+      </p>
+      <div class="page-actions">
+  <a class="page-btn page-btn-black" href="portfolio.html">← Back to portfolio</a>
+</div>
+    </div>
+
+    <div class="white-content-divider"></div>
+  </header>
+
+  <main class="site-white">
+
+    <!-- HERO IMAGE -->
+    <section class="project-hero-image reveal" data-delay="1">
+      <img src="assets/images/oceanos-hero.png" alt="Oceanos DSP and sensor fusion system overview" class="project-hero-img">
+    </section>
+
+    <div class="container">
+
+      <!-- INTRO -->
+      <section class="white-section project-intro reveal" data-delay="2">
+        <div class="project-intro-grid">
+          <div>
+            <p class="section-label">Overview</p>
+            <h2 class="section-title">System-level sensing and filtering for a real control environment</h2>
+          </div>
+
+          <div>
+            <p class="project-text">
+              This project focused on the sensing and digital signal processing side of the Oceanos control system.
+              The goal was to build a reliable simulation and filtering pipeline in MATLAB/Simulink for multiple onboard sensors,
+              allowing noisy measurements to be processed into cleaner and more useful signals for estimation and control.
+            </p>
+
+            <p class="project-text">
+              The work involved integrating data from GPS, IMU, and sonar sensors, studying the structure of the sensing blocks,
+              and designing filtering approaches such as Butterworth and Kalman filters to improve signal quality and state estimation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK FACTS -->
+      <section class="white-section reveal" data-delay="3">
+        <div class="facts-grid">
+          <div class="fact-card">
+            <p class="fact-label">Tools</p>
+            <p class="fact-value">MATLAB · Simulink</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Sensors</p>
+            <p class="fact-value">GPS · IMU · Sonar</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Focus</p>
+            <p class="fact-value">DSP · Filtering · Estimation</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Context</p>
+            <p class="fact-value">Real boat control system</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- KALMAN -->
+      <section class="white-section project-split reveal" data-delay="1">
+        <div class="project-split-media">
+          <img src="assets/images/kalman.png" alt="Kalman filter block or estimation diagram" class="project-section-img">
+        </div>
+        <div class="project-split-text">
+          <p class="section-label">Part 1</p>
+          <h2 class="section-title">Kalman Filter</h2>
+          <p class="project-text">
+            A major part of the work was understanding and refining the Kalman filtering structure used inside the sensing pipeline.
+            This included studying how the model combines noisy sensor measurements with system dynamics in order to produce smoother
+            and more reliable state estimates.
+          </p>
+          <p class="project-text">
+            Beyond implementation, the task also involved understanding the role of the filter parameters, noise assumptions,
+            and sampling choices, so the model could later be tuned in a meaningful engineering way.
+          </p>
+        </div>
+      </section>
+
+      <!-- SONAR -->
+      <section class="white-section project-split reverse reveal" data-delay="2">
+        <div class="project-split-media">
+          <img src="assets/images/sonar.png" alt="Sonar signal processing and filtering" class="project-section-img">
+        </div>
+        <div class="project-split-text">
+          <p class="section-label">Part 2</p>
+          <h2 class="section-title">Sonar Signal Processing</h2>
+          <p class="project-text">
+            The sonar measurement chain was analyzed to extract useful height-related information while rejecting noise.
+            This included examining the transformation of raw measurements into physically meaningful variables and using
+            filtering blocks to reduce fluctuations caused by sensor noise and motion.
+          </p>
+          <p class="project-text">
+            Special attention was given to how sonar information interacts with the rest of the sensing system, since
+            reliable height estimation is especially important in a dynamic marine environment.
+          </p>
+        </div>
+      </section>
+
+      <!-- IMU -->
+      <section class="white-section project-split reveal" data-delay="3">
+        <div class="project-split-media">
+          <img src="assets/images/imu.png" alt="IMU filtering and inertial sensing" class="project-section-img">
+        </div>
+        <div class="project-split-text">
+          <p class="section-label">Part 3</p>
+          <h2 class="section-title">IMU Filtering</h2>
+          <p class="project-text">
+            The IMU branch required filtering for motion-related quantities such as orientation and angular rates.
+            Butterworth low-pass filtering was used to improve measurement quality while preserving the useful dynamics
+            needed by the control system.
+          </p>
+          <p class="project-text">
+            This part of the project highlighted the tradeoff between noise reduction and responsiveness, which is a key
+            design issue in real-time sensing and control.
+          </p>
+        </div>
+      </section>
+
+      <!-- GPS -->
+      <section class="white-section project-split reverse reveal" data-delay="1">
+        <div class="project-split-media">
+          <img src="assets/images/gps.png" alt="GPS data integration in MATLAB and Simulink" class="project-section-img">
+        </div>
+        <div class="project-split-text">
+          <p class="section-label">Part 4</p>
+          <h2 class="section-title">GPS Integration</h2>
+          <p class="project-text">
+            GPS data was incorporated as part of the wider sensing architecture, contributing global position and motion-related
+            information to the system. The challenge was not only reading the data, but integrating it consistently with the other
+            sensors inside a unified simulation framework.
+          </p>
+          <p class="project-text">
+            In practice, this meant treating the sensing pipeline as a combined system rather than a collection of isolated blocks.
+          </p>
+        </div>
+      </section>
+
+      <!-- FINAL TAKEAWAYS -->
+      <section class="white-section reveal" data-delay="2">
+        <div class="project-intro-grid">
+          <div>
+            <p class="section-label">Outcome</p>
+            <h2 class="section-title">What this project taught me</h2>
+          </div>
+          <div>
+            <p class="project-text">
+              This work gave me hands-on experience with real engineering tradeoffs in sensing, filtering, and simulation.
+              More specifically, it strengthened my understanding of DSP in practical systems, how sensor models behave under noise,
+              and how estimation methods fit into a larger automatic control architecture.
+            </p>
+            <p class="project-text">
+              It also deepened my ability to work inside a large technical model, understand existing code and block structures,
+              and improve them in a structured and engineering-oriented way.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BACK LINK -->
+      <section class="white-section reveal" data-delay="3">
+        <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+      </section>
+
+      <footer class="white-footer">
+        <div class="footer-inner">
+          <div class="footer-left">© <span id="y"></span> Konstantinos Vamvakas</div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/konstantinos-vamvakas-676407391/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/KostasVamvakas?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
