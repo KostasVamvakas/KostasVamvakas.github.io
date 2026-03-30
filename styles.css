@@ -1833,3 +1833,146 @@ textarea{min-height:140px; resize:vertical}
   filter: brightness(0.85);
 }
 
+.project-kicker {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.project-hero-image {
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.project-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.project-intro-grid,
+.project-split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.project-split.reverse {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.project-split.reverse .project-split-media {
+  order: 2;
+}
+
+.project-split.reverse .project-split-text {
+  order: 1;
+}
+
+.section-label {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+}
+
+.section-title {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.project-text {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #222;
+  margin: 0 0 18px;
+}
+
+.project-section-img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.fact-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 20px;
+  background: #fff;
+}
+
+.fact-label {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+.fact-value {
+  margin: 0;
+  font-size: 1rem;
+  color: #111;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .project-intro-grid,
+  .project-split,
+  .project-split.reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-split.reverse .project-split-media,
+  .project-split.reverse .project-split-text {
+    order: unset;
+  }
+
+  .facts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-split-media {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.project-section-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.project-split-media:hover .project-section-img {
+  transform: scale(1.08);
+}
